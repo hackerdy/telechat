@@ -4,16 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 <body>
-    <header class="header" id="header">
-        <div class="logo">
-            <h1>TeleChat</h1>
-        </div>
-
+    <header class="heading" id="heading">
         <nav class="navbar">
-            <h4>Good day {fName}!</h4>
+          <div class="nav-left">
+            <h1>
+            TeleChat
+            </h1>
+          </div>  
+          <div class="nav-right">
+            <span id="greeting" class="greeting"></span>
+            <img alt="User Photo" class="user-photo" id="user-photo">
+          </div>
         </nav>
     </header>
+
+
+        
+    <main>
+        <a href="index.html"> Go Back</a>
+    </main>
 </body>
+
+<script src="app.js"></script>
 </html>
