@@ -33,6 +33,10 @@
     background:  #2AABEE;
 }
 
+.nav-left .logo{
+    height: 40px;
+}
+
 .nav-right{
     display: flex;
     align-items: center;
@@ -71,12 +75,7 @@ main{
 }
 
 .welcome img{
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    margin-top: 10px;
-}
+
 
 
 
