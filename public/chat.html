@@ -44,10 +44,17 @@
         messagingSenderId: "1040556157757",
         appId: "1:1040556157757:web:7f2386944210615cfaf354"
       };
-    
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-      const database = firebase.database();
+
+
+      let app;
+     if (!getApps().length) {
+       app = initializeApp(firebaseConfig);
+   } else {
+     app = getApps()[0];
+   }
+
+// Get the Firebase Realtime Database instance
+const database = getDatabase(app);
     </script>
     
     <script src="chat.js" defer></script>
