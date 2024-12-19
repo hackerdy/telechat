@@ -9,7 +9,7 @@
 
 .header{
     height: 10vh;
-    width: 100vh;
+    width: 100vw;
     background:  #2AABEE;
     text-align: center;
     justify-content: center;
@@ -20,7 +20,8 @@
 
 
 main{
-    background: wheat;
+    background: #8C8C8C;
     height: 100vh;
+    width: 100vw;
 }
 
