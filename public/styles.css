@@ -25,3 +25,16 @@ main{
     width: 100vw;
 }
 
+
+.welcome{
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.welcome img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-top: 10px;
+}
