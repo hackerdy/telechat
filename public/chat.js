@@ -28,3 +28,44 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
   
+
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const messagesContainer = document.getElementById("messages");
+    const messageInput = document.getElementById("message-input");
+    const sendButton = document.getElementById("send-button");
+  
+    // Function to add a message to the chat
+    function addMessage(content, sender = "user") {
+      const messageElement = document.createElement("div");
+      messageElement.classList.add("message", sender);
+      messageElement.textContent = content;
+      messagesContainer.appendChild(messageElement);
+  
+      // Scroll to the bottom of the messages
+      messagesContainer.scrollTop = messagesContainer.scrollHeight;
+    }
+  
+    // Event listener for the send button
+    sendButton.addEventListener("click", () => {
+      const message = messageInput.value.trim();
+      if (message) {
+        addMessage(message, "user"); // Add the user's message
+        messageInput.value = ""; // Clear the input field
+  
+        // Simulate a response from the "other" side
+        setTimeout(() => {
+          addMessage("This is an auto-reply!", "other");
+        }, 1000);
+      }
+    });
+  
+    // Allow sending messages with the Enter key
+    messageInput.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" && !event.shiftKey) {
+        event.preventDefault();
+        sendButton.click();
+      }
+    });
+  });
+  
