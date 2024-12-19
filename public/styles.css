@@ -33,6 +33,10 @@
     background:  #2AABEE;
 }
 
+.nav-left h1{
+height: 40px;
+}
+
 .nav-right{
     display: flex;
     align-items: center;
@@ -47,6 +51,11 @@
     border: 2px solid #ddd;
 }
 
+.nav-right span {
+  font-size: 15px;
+  font-weight: bold;
+  color: #333;
+}
 
 main{
     background: #8C8C8C;

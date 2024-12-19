@@ -23,8 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (user.photo_url) {
       userPhotoElement.src = user.photo_url;
     } else {
-      // Default placeholder image if no profile picture is available
-      userPhotoElement.src = "default-user.png"; // Replace with your default image path
+      
+      userPhotoElement.src = "default-user.png"; 
     }
   });
   
