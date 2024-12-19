@@ -33,10 +33,6 @@
     background:  #2AABEE;
 }
 
-.nav-left .logo{
-    height: 40px;
-}
-
 .nav-right{
     display: flex;
     align-items: center;
@@ -52,9 +48,7 @@
 }
 
 .nav-right span{
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
+    
 }
 
 main{
@@ -74,10 +68,10 @@ main{
     font-weight: 700;
 }
 
-#welcomeimg{
+.welcome img{
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
     margin-top: 10px;
 }
