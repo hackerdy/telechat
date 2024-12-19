@@ -40,7 +40,7 @@ height: 40px;
 .nav-right{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
 }
 
 .nav-right .user-photo{
