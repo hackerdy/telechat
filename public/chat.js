@@ -13,9 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // Display greeting with user's first name
     const greetingElement = document.getElementById("greeting");
     if (user.first_name) {
-      greetingElement.textContent = `${greeting}, ${user.first_name}!`;
+      greetingElement.innerHTML = `${greeting}, <br> ${user.first_name}!`;
     } else {
-      greetingElement.textContent = greeting;
+      greetingElement.innerHTML = greeting;
     }
   
     // Display user's profile picture
