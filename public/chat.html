@@ -49,9 +49,9 @@
       let app;
      if (!getApps().length) {
        app = initializeApp(firebaseConfig);
-   } else {
-     app = getApps()[0];
-   }
+         } else {
+       app = getApps()[0];
+         }
 
 // Get the Firebase Realtime Database instance
 const database = getDatabase(app);
