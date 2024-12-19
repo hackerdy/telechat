@@ -1,0 +1,26 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.header{
+    height: 10vh;
+    width: 100vh;
+    background:  #2AABEE;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: "Nunito Sans", "Roboto Condensed", serif;
+}
+
+
+main{
+    background: wheat;
+    height: 100vh;
+}
+
