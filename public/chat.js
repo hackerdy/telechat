@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Display greeting with user's first name
     const greetingElement = document.getElementById("greeting");
     if (user.first_name) {
-      greetingElement.textContent = `${greeting},<br>${user.first_name}!`;
+      greetingElement.textContent = `${greeting}, ${user.first_name}!`;
     } else {
       greetingElement.textContent = greeting;
     }
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
       userPhotoElement.src = user.photo_url;
     } else {
       
-      userPhotoElement.src = "default-user.png"; 
+      userPhotoElement.src = "default-user.png"; // Replace with your default image path
     }
   });
   
