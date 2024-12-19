@@ -47,15 +47,11 @@
     border: 2px solid #ddd;
 }
 
-.nav-right span{
-    
-}
 
 main{
     background: #8C8C8C;
     height: 100vh;
     width: 100vw;
-    position: relative;
 }
 
 
@@ -79,9 +75,13 @@ main{
 
 
 
-
+.joinchat{
+    margin-top: 30px;
+    align-items:center ;
+   justify-content: center;
+   display: flex;
  
-
+}
 .joinchat a{
     text-decoration: none;
     font-weight: 900;
